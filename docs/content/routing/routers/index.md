@@ -437,8 +437,8 @@ It only matches the request client IP and does not use the `X-Forwarded-For` hea
 
 ### Priority
 
-To avoid path overlap, routes are sorted, by default, in descending order using rules length.
-The priority is directly equal to the length of the rule, and so the longest length has the highest priority.
+To avoid path overlap, routes are sorted, in descending order, by their priority value.
+By default, the priority is directly equal to the length of the rule, and so the longest length has the highest priority.
 
 A value of `0` for the priority is ignored: `priority = 0` means that the default rules length sorting is used.
 
